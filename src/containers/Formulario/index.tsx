@@ -32,7 +32,7 @@ const Formulario = () => {
 
   return (
     <MainContainer>
-      <Titulo>Nova tarefa</Titulo>
+      <Titulo>Novo E-mail</Titulo>
       <Form onSubmit={cadastrarTarefa}>
         <Campo
           value={titulo}
@@ -44,7 +44,7 @@ const Formulario = () => {
           value={descricao}
           onChange={(evento) => setdescricao(evento.target.value)}
           as="textarea"
-          placeholder="Descrição da tarefa"
+          placeholder="Descrição do e-mail"
         />
         <Opcoes>
           <p>Prioridade</p>
@@ -64,7 +64,7 @@ const Formulario = () => {
             </Opcao>
           ))}
         </Opcoes>
-        <BotaoSalvar type="submit">Cadastrar</BotaoSalvar>
+        <BotaoSalvar type="submit">Enviar</BotaoSalvar>
       </Form>
     </MainContainer>
   )
